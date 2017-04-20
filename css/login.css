@@ -1,0 +1,90 @@
+*{
+	margin:0;
+}
+
+
+#loginHeader{
+	height: 100px;
+	background-color: #fff; 
+}
+#loginContent{
+	position: relative;
+	height: 400px;
+	background-color: #ff0; 
+}
+#loginFooter{
+	height: 80px;
+	background-color: #000;
+	padding-top: 50px; 
+	text-align: center;
+}
+#login-banner{
+	position: absolute;
+	top: 50px;
+	right: 50px;
+	background: #fff;
+	height: 280px;
+	width: 270px;
+	padding: 10px 30px 30px;
+}
+#login-banner h1{
+	display: block;
+	text-align: center;
+	color: red;
+	margin-bottom: 50px;
+}
+#login-banner input[type="submit"]{
+	width: 100%;
+	background: red;
+	color: white;
+	border:0;
+	padding: 7px; 
+
+}
+#login-banner form div{
+	margin-bottom: 10px;
+}
+#signupButton{
+	text-align: right;
+}
+#signupButton a{
+	text-decoration: none;
+	font-size: 5px;
+	color: red;
+}
+#signupButton b{
+	display: inline-flex;
+	border-radius: 10px;
+	width: 14px;
+	height: 14px;
+	background-color: red;
+	color: white; 
+	padding: 2px;
+	justify-content: center;
+	align-items: center;
+	font-size: 8px;
+}
+
+
+#loginFooter li {
+	display: inline-block;
+	padding: 4px;
+	height: 10px;
+}
+#loginFooter a {
+	
+	text-decoration: none;
+	font-size: 10px;
+	border-right:1px solid white;
+	padding-right: 6px;
+}
+#loginFooter a, p{
+	color: white;
+}
+#loginFooter li:last-of-type a{
+	border: 0;
+}
+#loginFooter p{
+	margin-top:8px;
+	font-size: 6px;
+}

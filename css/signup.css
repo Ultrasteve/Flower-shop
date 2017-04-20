@@ -1,0 +1,53 @@
+*{
+	margin: 0;
+}
+#signupHeader{
+	height: 100px;
+	background-color: white;
+}
+#signupContent{
+	height: 600px;
+	background-color: yellow;
+	padding-top: 80px;
+	box-sizing: border-box;
+}
+#signupFooter{
+	height: 150px;
+	background-color: white;
+}
+#signupContent>div{
+	margin: 0 auto;
+	width: 400px;
+}
+#signupContent>div>h2{
+	color: red;
+	font-weight: 10px;
+	margin-bottom: 30px;
+}
+
+.signupBar{
+	position: relative;
+	width: 270px;
+	height: 40px;
+	border: 1px solid #888888;
+	background-color: white;
+	padding-top: 1px;
+	box-sizing: border-box; 
+	margin-bottom: 40px;
+}
+.signupBar>label{
+	float: left;
+	width: 60px;
+	height: 100%;
+	border-right:  1px solid #888888;
+	color: #888888;
+	text-align: center;
+	line-height: 34px; 
+	font-size: 10px;
+}
+.signupBar>input{
+	float: left;
+	height: 95%;
+	border: 0 solid transparent;
+	outline: none;
+}
