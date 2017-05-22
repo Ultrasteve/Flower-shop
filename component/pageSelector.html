@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	
+</head>
+<style>
+	#pageSelector a{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	border: 1.5px solid #888888;
+	border-radius: 4px;
+	background-color: white;
+	color: black;
+	height: 30px;
+	width: 30px;
+	font-size: 7px;
+	text-decoration: none;
+	transition: background-color color 0.5s;
+}
+#pageSelector a:hover {
+	color: white;
+	background-color: red;
+}
+
+#pageSelector a:first-of-type,  #pageSelector a:last-of-type{
+	width: 60px;
+}
+
+#pageSelector span {
+	text-align: center;
+	color: #888888;
+	margin: 0 5px;
+}
+
+#directJump {
+	margin-left: 10px;
+	display: inline-block;
+}
+#directJump input[type=text] {
+	border: 1px solid #888888;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+}
+#directJump input[type=submit] {
+	border: 1px solid #666;
+	border-radius: 5px;
+	background-color: red;
+	height: 30px;
+	width: 60px;
+	margin-left: 10px;
+	color: white;
+}
+
+</style>
+<body>
+	<div id="pageSelector">
+		<a>&lt;上一页</a>
+		<a href="#">1</a>
+		<a href="#">2</a>
+		<a href="#">3</a>
+		<a href="#">4</a>
+		<span>...</span>
+		<a href="#">5</a>
+		<a href="#">下一页&gt;</a>
+		<span>共100页</span>
+		<form id="directJump">
+			<span>到第</span>
+			<input type="text" name="jumpPage" placeholder="1">
+			<span>页</span>
+			<input type="submit" value="确定">
+		</form>
+	</div>
+</body>
+</html>
