@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		* {
+	margin:0;
+}
+
+#carBox{
+	width: 990px;
+	margin: 0 auto;
+}
+
+.cart-panel table{
+	border: 1px solid #ebebeb;
+}
+.cart-panel tr:first-of-type{
+	background-color: #ebebeb;
+}
+.cart-panel tr td{
+	width: 141px;
+	box-sizing: border-box;
+}
+.cart-panel tr:first-of-type td{
+	height: 40px;
+	padding-left: 8px;
+	vertical-align: middle; 
+	font-weight: bold;
+	font-size: 17px; 
+}
+.cart-panel tr td:first-of-type{
+	width: 423px;
+}
+
+.cart-submit {
+	margin-top: 20px;
+	border: 1px solid #ebebeb;
+	overflow: hidden;
+}
+.cart-submit div{
+	float: right;
+	margin-right: 10px;
+	line-height: 40px;
+}
+.cart-submit div>span:last-of-type {
+	font-size: 10px;
+	color: red;
+	font-weight: bold;
+}
+.cart-submit div>span {
+	font-size: 7px;
+	color: #999999;
+}
+.cart-submit button{
+	width: 80px;
+	height: 40px;
+	color: white;
+	float: right;
+	font-weight: bold;
+	font-size: 15px;
+	background-color: red;
+	border: 0;
+}
+	</style>
+</head>
+<body>
+	<div id="carBox">
+		<div class="cart-panel">
+			<table border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td>商品名称</td>
+					<td>市场价</td>
+					<td>订购价</td>
+					<td>数量</td>
+					<td>操作</td>
+				</tr>
+				<tr>
+					<td>asdsdsdsds</td>
+					<td>asdsdsdsds</td>
+					<td>asdsdsdsds</td>
+					<td>asdsdsdsds</td>
+					<td>asdsdsdsds</td>
+				</tr>
+			</table>
+		</div>
+		<div class="cart-submit">
+			<button>去结算</button>
+			<div>
+				<span>应付金额:</span>
+				<span>￥0</span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

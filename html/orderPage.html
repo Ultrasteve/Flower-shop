@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	* {
+		margin: 0;
+	}
+
+	.panel {
+		width: 990px;
+		margin: 0 auto;
+		margin-bottom: 30px;
+		border: 1px solid #ebebeb;
+		border-radius: 5px;
+	}
+	.panel-head {
+		background-color: #ebebeb;
+		margin: 0;
+		padding: 5px 20px;
+	}
+	#orderInfo {
+		padding: 10px 20px;
+	}
+	#orderInfo>div {
+		border-bottom: 1px dotted #ebebeb;
+		padding: 20px 0;
+	}
+
+	#customerAddress a {
+		color: #ebebeb;
+		float: right;
+		text-decoration: none;
+		font-size: 10px;
+	}
+
+	#customerInfo {
+		margin-top: 10px;
+		font-size: 10px;
+		line-height: 25px;
+	}
+	#customerInfo div {
+		width: 50px;
+		height: 25px;
+		float: left;
+		border-radius: 5px;
+		text-align: center;
+		border: 2px solid red;
+		font-weight: bold;
+	}
+	#customerInfo span {
+		margin-left: 7px;
+		color: #999999;
+	}
+	#customerInfo a {
+		color: green;
+		text-decoration: none;
+		float: right;
+	}
+
+	#bookerInfo input {
+		display: inline-block;
+		border: 1px solid #ebebeb;
+		height: 27px;
+		color: #ebebeb;
+	}
+	#bookerInfo h5 {
+		margin-bottom: 8px;
+	}
+	#bookerInfo button {
+		height: 30px;
+		width: 50px;
+		color: white;
+		background-color: red;
+		border: none;
+		outline: none;
+	}
+	#bookerInfo span, #bookerInfo a {
+		font-size: 10px;
+		margin-left: 20px;
+	}
+	#bookerInfo span {
+		color: #999999;
+	}
+	#bookerInfo a {
+		color: red;
+		text-decoration: none;
+	}
+	#bookerInfo span:first-of-type {
+		margin-left: 0;
+	}
+
+	#arriveDate div:last-of-type{
+		margin-left: 10px;
+	}
+	#arriveDate div>h5 {
+		margin-bottom: 8px;
+	}
+	#arriveDate div, #arriveDate div>button {
+		display: inline-block;
+		box-sizing: border-box;
+	}
+
+	#arriveDate div>button {
+		background-color: white;
+		border: 1px solid #999999;
+		border-radius: 4px;
+		width: 50px;
+		height: 30px;
+		font-size: 15px;
+		vertical-align: middle;
+		outline: none;
+	}
+	#arriveDate div>div:not(:first-of-type) {
+		margin-left: 10px;
+	}
+
+	#messageCard h5 {
+		margin-bottom: 10px;
+	}
+	#messageCard span {
+		font-size: 13px;
+		color: #999999;
+	}
+	#messageCard span:nth-of-type(2) {
+		color: red;
+		font-size: 16px;
+		font-weight: bold;
+	}
+
+	#payment h5 {
+		margin-bottom: 8px;
+	}
+	#payment button {
+		background-color: white;
+		border: 1px solid #999999;
+		border-radius: 4px;
+		width: 110px;
+		height: 30px;
+		font-size: 15px;
+		vertical-align: middle;
+		outline: none;
+	}
+	#payment button:not(:first-of-type) {
+		margin-left: 10px;
+	}
+
+	#appendInfo label {
+		display: block;
+	}
+	#appendInfo span {
+		font-size: 13px;
+	}
+
+	#submitOrder {
+		width: 990px;
+		margin: 0 auto;
+		margin-bottom: 20px;
+		text-align: right;
+	}
+	#submitOrder span {
+		font-size: 12px;
+		color: #999999;
+	}
+	#submitOrder button {
+		margin-top: 10px;
+		border: 0;
+		background-color: red;
+		color: white;
+		font-size: 20px;
+		width: 150px;
+		height: 45px;
+	}
+	#totalCheck span:last-of-type {
+		color: red;
+		font-size: 15px;
+		font-weight: bold;
+	}
+
+	</style>
+</head>
+<body>
+	<div id="orderInfoPanel" class="panel">
+		<div id="orderHeading" class="panel-head">
+			<h3>填写订单信息</h3>
+		</div>
+		<div id="orderInfo">
+			<div id="customerAddress">
+				<a href="#">新增收货人+</a>
+				<h5>收货人信息</h5>
+				<div id="customerInfo">
+					<div>
+						收货人
+					</div>
+					<span>steve</span>
+					<span>广东</span>
+					<span>广州市</span>
+					<span>海珠区</span>
+					<span>详细地址</span>
+					<span>1111</span>
+					<span>010</span>
+					<a href="#">编辑</a>
+				</div>
+			</div>
+			<div id="bookerInfo">
+				<h5>订购人信息</h5>
+				<!-- <input type="text" placeholder="您的姓名" />
+				<input type="text" placeholder="手机号码或电话" />
+				<input type="text" placeholder="电子邮箱" />
+				<button>确定</button> -->
+				<span>steve</span>
+				<span>11111</span>
+				<span>11@qq.com</span>
+				<a href="#">编辑</a>
+			</div>
+			<div id="arriveDate">
+				<div>
+					<h5>送达日期</h5>
+					<input type="date" />
+				</div>
+				<div>
+					<h5>配送时段</h5>
+					<button>不限</button>
+					<button>上午</button>
+					<button>下午</button>
+					<button>晚上</button>
+					<button>定时</button>
+				</div>
+			</div>
+			<div id="messageCard">
+				<div>
+					<h5>贺卡留言+署名</h5>
+					<textarea name="" id="" cols="60" rows="8">贺卡留言+署名</textarea>
+					<div>
+						<span>最多200字，您还可以输入</span>
+						<span>200</span>
+						<span>字。（仅支持中文，英文）</span>
+					</div>
+				</div>
+			</div>
+			<div id="payment">
+				<h5>支付方式</h5>
+				<button>网上支付</button>
+				<button>礼品卡支付</button>
+			</div>
+			<div id="appendInfo">
+				<label>
+					<input type="checkbox">
+					<span>备注</span>
+				</label>
+				<label>
+					<input type="checkbox">
+					<span>我要发票</span>
+				</label>
+				<label>
+					<input type="checkbox">
+					<span>我有优惠券</span>
+				</label>
+			</div>
+			</div>
+	</div>
+	<div class="panel">
+		<div class="panel-head">
+			<h3>核对购物清单</h3>
+		</div>
+		<div>
+		</div>
+	</div>
+	<div id="submitOrder">
+		<div>
+			<span>1</span>
+			<span>件商品，总商品金额：</span>
+			<span>¥ 161</span>
+		</div>
+		<div>
+			<span>配送费：</span>
+			<span>¥ 0</span>
+		</div>
+		<div id="totalCheck">
+			<span>实付款：</span>
+			<span>¥ 161</span>
+		</div>
+		<div>
+			<span>配送至： </span>
+			<span>广州市</span>
+		</div>
+		<div>
+			<span>收货人：</span>
+			<span>Nebulus</span>
+		</div>
+		<button>
+			提交订单
+		</button>
+		<div style="clear: both;"></div>
+	</div>
+</body>
+</html>
