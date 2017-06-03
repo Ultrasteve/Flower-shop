@@ -1,57 +1,110 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
- 	<meta charset="UTF-8">
- 	<title>Document</title>
- 	<link rel="stylesheet" href="test.css" type="text/css">
- </head>
- <style>
- 	.goodsFrame {
-	width:240px;
-	height:476px;
-	display: inline-block;
-	padding: 7px;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="test.css" type="text/css">
+</head>
+<style>
+	a {
+	text-decoration: none;
+}
+.gird-item {
+	float: left;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid transparent;
+    background-color: #fff;
+}
+.gird-item:hover {
+	border: 1px solid #ccc;
+}
+.gird-panel {
+	width: 220px;
 	box-sizing: border-box;
-	position: relative;
-}
-.goodsFrame:hover {
-	border: 1px solid #888888;
-}
-.goodsFrame>img {
-	border: 1px solid #888888;
-}
-.goodsPrice {
-	color: red;
-	height: 20px;
-	position: relative;
-	overflow: hidden;
-}
-.goodsPrice>img {
-	border: 1px solid #888888;
-	float: right;
-}
-.goodsName {
-	color: #888888;
-}
-.goodsInfo {
-	color: #888888;
 }
 
- </style>
- <body>
- 	<div class="goodsFrame">
- 		<img width="220" height="220" class="goodsImg"></img>
- 		<div class="goodsPrice">
- 			<em>￥</em>
- 			<i>2799.00</i>
- 			<img height="20" width="50" />
- 		</div>
- 		<div class="goodsName">
- 			<p>哗哗哗哗哗哗哗哗哗哗哗哗哗哗哗哗哗哗</p>
- 		</div>
- 		<div class="goodsInfo">
- 			<p>哗哗哗哗哗哗哗哗哗哗哗哗哗哗哗哗哗哗fdfdf</p>
- 		</div>
- 	</div>
- </body>
- </html>
+.gird-item .img-box{
+	position: relative;
+    overflow: hidden;
+    width: 220px;
+    height: 240px;
+    margin-bottom: 10px;
+
+}
+.gird-item a {
+	color: #737373;
+    text-decoration: none;
+}
+.gird-item img {
+	display: block;
+    width: 220px;
+    height: 240px;
+}
+.gird-item .title {
+	font-size: 12px;
+    line-height: 18px;
+    overflow: hidden;
+    height: 36px;
+    margin-bottom: 8px;
+    text-align: justify;
+}
+.gird-item .info-cont .title span {
+	font-size: 12px;
+    display: block;
+    max-width: 220px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.gird-item .price {
+	margin-bottom: 8px;
+    color: #ff6a00;
+}
+.gird-item .price>span {
+	font-weight: 700;
+    line-height: 18px;
+    margin-right: 10px;
+}
+.gird-item .operate {
+	color: #888;
+}
+.gird-item .operate a {
+	font-size: 12px;
+    display: inline-block;
+    width: 105px;
+    padding: 4px 0;
+    text-align: center;
+    border: 1px solid #d9d9d9;
+}
+</style>
+<body>
+	<div class="gird-item">
+		<div class="gird-panel">
+			<div class="img-box">
+				<a href="#">
+					<img src="http://img01.hua.com/uploadpic/newpic/5901052.jpg_220x240.jpg" width="220" height="240">
+				</a>
+			</div>
+			<div class="info-cont">
+				<div class="price">
+					<span>¥&nbsp;218</span>
+				</div>
+				<div class="title">
+					<a href="#">
+						<span>诺心蛋糕/你好米菲 hallo miffy（2-4人食）-慕斯蛋糕</span>
+					</a>
+				</div>
+				<div class="operate">
+					<a href="#">
+						<span>收藏</span>
+					</a>
+					<a href="#">
+						<span>加入购物车</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

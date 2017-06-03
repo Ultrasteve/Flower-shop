@@ -3,8 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" href="../css/goodsInfo.css">
-	<link rel="stylesheet" href="../css/index.css">
+	<link rel="stylesheet" href="../css/index.css" 
+	type="text/css">
 </head>
 <body>
 	<div id="mainHeader">
@@ -139,65 +139,105 @@
 		<div>巧克力</div>
 		<div>花语大全</div>
 	</div>
-	<div class="container">
-		<div class="navigator">
-			<a href="#">首页</a>
-			<span>&gt;</span>
-			<a href="#">鲜花</a>
-			<span>&gt;</span>
-			<a href="#">为爱相随</a>
+	<div class="carousel-box">
+		<div class="item active" id="carousel0" data-slide='0'>
+			<div class="fill" style="background-image: url('carousal1.jpg');"></div>
 		</div>
-		<div class="goods-info">
-			<div>
-				<div class="big-image">
-					<div class="pro-btn">
-						<div>
-							&lt;
-						</div>
-						<div>
-							&gt;
-						</div>
-					</div>
-					<img src="big.jpg" alt="">
+		<div class="item" id="carousel1" data-slide='1'>
+			<div class="fill" style="background-image: url('carousal02.jpg');"></div>
+		</div>
+		<div class="item" id="carousel2" data-slide='2'>
+			<div class="fill" style="background-image: url('carousel03.jpg');"></div>
+		</div>
+		<div class="item" id="carousel3" data-slide='3'>
+			<div class="fill" style="background-image: url('carousel04.jpg');"></div>
+		</div>
+		<div class="carousel-indicator">
+			<input type="radio" onclick="changeCarousel(this)" name="rTeam" data-slide-to='0' checked="true" />
+			
+			<input type="radio" onclick="changeCarousel(this)" name="rTeam" data-slide-to='1'/>
+			
+			<input type="radio" onclick="changeCarousel(this)" name="rTeam" data-slide-to='2'/>
+			
+			<input type="radio" onclick="changeCarousel(this)" name="rTeam" data-slide-to='3'/>
+			
+		</div>
+		<!-- 轮播控制 -->
+	</div>
+	<div class="floor">
+		<div class="floor-hd">
+			<a href="#">更多爱情鲜花&gt;&gt;</a>
+			<h3>
+				<a href="#">爱情鲜花</a>
+			</h3>
+			<span>送·让你怦然心动的人</span>
+		</div>
+		<div class="bd">
+			<div class="bd-1">
+				<div class="banner-box">
+					<a href="#">
+						<img src="http://img02.hua.com/pc/pimg/banner_love.jpg">
+					</a>
 				</div>
-				<div class="image-selector">
-					<div class="small-image">
-						<img src="small.jpg" alt="">
-					</div>
-					<div class="small-image">
-						<img src="small.jpg" alt="">
-					</div>
-					<div class="small-image">
-						<img src="small.jpg" alt="">
-					</div>
-					<div class="small-image">
-						<img src="small.jpg" alt="">
-					</div>
-				</div>
+				<a href="#">爱情鲜花专区&gt;&gt;</a>
 			</div>
-			<div>
-				<h4 class="flowers-title">依靠---戴安娜12枝</h4>
-				<div class="flowers-line"></div>
-				<div class="flowers-detail">
-					<div>类别:</div>
-					<div>材料:</div>
-					<div>包装:</div>
-					<div>花语:</div>
-					<div>附送:</div>
-					<div>配送:</div>
+			<ul class="floor-products">
+				<li>
+					<a href="#">
+						<span class="img-box">
+							<img src="http://img01.hua.com/uploadpic/newpic/9010766.jpg_220x240.jpg" alt="">
+						</span>
+						<span>鲜花 · 圆满</span>
+						<p>¥&nbsp;196</p>
+					</a>
+				</li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</div>
+	<div class="floor">
+		<div class="floor-hd">
+			<a href="#">更多爱情鲜花&gt;&gt;</a>
+			<h3>
+				<a href="#">爱情鲜花</a>
+			</h3>
+			<span>送·让你怦然心动的人</span>
+		</div>
+		<div class="bd">
+			<div class="bd-1">
+				<div class="banner-box">
+					<a href="#">
+						<img src="http://img02.hua.com/pc/pimg/banner_love.jpg">
+					</a>
 				</div>
-				<div class="flowers-line"></div>
-				<div class="flowers-price">
-					花礼价：
-					<span>¥&nbsp;148</span>
-				</div>
-				<div>
-					<button>立即购买</button>
-					<div>关注</div>
-				</div>
+				<a href="#">爱情鲜花专区&gt;&gt;</a>
 			</div>
+			<ul class="floor-products">
+				<li>
+					<a href="#">
+						<span class="img-box">
+							<img src="http://img01.hua.com/uploadpic/newpic/9010766.jpg_220x240.jpg" alt="">
+						</span>
+						<span>鲜花 · 圆满</span>
+						<p>¥&nbsp;196</p>
+					</a>
+				</li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
 		</div>
 	</div>
 </body>
-<script src="../js/flower.js"></script>
+<script type="text/javascript" src="../js/flower.js"></script>
 </html>

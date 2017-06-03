@@ -1,0 +1,145 @@
+* {
+	margin: 0;
+}
+
+
+.container {
+	margin: 10px 50px;	
+}
+.navigator {
+	font-size: 15px;
+	color: #999999;
+}
+.navigator a, .navigator span {
+	margin-right: 4px;
+}
+.navigator a {
+	color: #999999;
+	text-decoration: none;
+}
+.navigator a:last-of-type {
+	color: red;
+}
+.navigator a:first-of-type {
+	font-weight: bold;
+}
+
+.goods-info {
+	width: 1200px;
+	height: 680px;
+	margin-top: 10px;
+	border-radius: 5px; 
+	border: 1px solid #cac7c7;
+	padding: 20px 30px 15px 30px;
+	box-sizing: border-box;
+	overflow: auto;
+}
+.goods-info>div {
+	display: inline-block;
+}
+.goods-info>div:first-of-type {
+	width: 440px;
+	float: left;
+}
+.goods-info>div:last-of-type {
+	width: 50%;
+	float: right;
+}
+
+
+.flowers-title {
+	color: #999999;
+}
+.flowers-line {
+ 	width: 100%;
+ 	height: 1px;
+ 	margin-top: 10px;
+ 	border-bottom: 0.5px solid #999999;
+}
+.flowers-detail {
+	font-size: 15px;
+	color: #999999;
+	text-align: left;
+}
+.flowers-detail>div {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.flowers-price {
+	margin-left: 10px;
+	font-size: 13px;
+	color: #999999;
+	margin: 10px 0;
+}
+.flowers-price span{
+	color: red;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.flowers-price+div>button {
+	display: inline-block;
+	background: red;
+	width: 90px;
+	height: 40px;
+	margin-right: 10px; 
+	color: white;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 7px 0;
+	text-align: center;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+}
+.flowers-price+div>div {
+	display: inline-block;
+	font-size: 15px;
+	text-align: center;
+}
+
+.big-image {
+	position: relative;
+	width: 440px;
+	height: 480px;
+}
+.pro-btn {
+	position: absolute;
+	width: 440px;
+	height: 100%;
+}
+.pro-btn>div:first-of-type {
+	display: inline-block;
+	width: 210px;
+	height: 100%;
+	font-size: 30px;
+	padding-top: 220px;
+	padding-left: 30px;
+	box-sizing: border-box;
+	text-align: left;
+	color: #999999;
+	font-weight: bold;
+}
+.pro-btn>div:last-of-type {
+	display: inline-block;
+	width: 210px;
+	height: 100%;
+	padding-top: 220px;
+	padding-right:30px;
+	box-sizing: border-box;
+	font-size: 30px;
+	text-align: right;
+	color: #999999;
+	font-weight: bold;
+}
+
+.image-selector {
+	margin-top: 20px;
+	width: 100%;
+}
+.small-image {
+	border: 0.5px solid #999999;
+	margin-left: 16px;
+	display: inline-block;
+}
