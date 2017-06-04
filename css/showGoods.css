@@ -369,6 +369,11 @@ header .logo .siteName{
 	border-right: 5px solid transparent; 
 	border-top: 10px solid #888;
 }
+
+.gird-wrapper {
+	padding: 0 1px;
+	overflow: auto;
+}
 .gird-item {
 	float: left;
     margin-bottom: 20px;
@@ -438,4 +443,71 @@ header .logo .siteName{
     border: 1px solid #d9d9d9;
 }
 
+.page-wrapper {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding: 4px 0;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+    overflow: auto;
+}
+.page-wrapper p{
+	line-height: 34px;
+    float: left;
+    margin: 20px 0;
+    color: #999999;
+}
+
+#pageSelector {
+	float: right;
+	margin-top: 14px;
+}
+#pageSelector a{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #888888;
+	border-radius: 4px;
+	background-color: white;
+	color: black;
+	height: 30px;
+	width: 30px;
+	font-size: 10px;
+	text-decoration: none;
+	transition: background-color color 0.5s;
+}
+#pageSelector a:hover {
+	color: white;
+	background-color: red;
+}
+
+#pageSelector a:first-of-type,  #pageSelector a:last-of-type{
+	width: 60px;
+}
+
+#pageSelector span {
+	text-align: center;
+	color: #888888;
+	margin: 0 5px;
+}
+
+#directJump {
+	margin-left: 10px;
+	display: inline-block;
+}
+#directJump input[type=text] {
+	border: 1px solid #888888;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+}
+#directJump input[type=submit] {
+	border: none;
+	border-radius: 5px;
+	background-color: red;
+	height: 30px;
+	width: 60px;
+	margin-left: 10px;
+	color: white;
+}
 

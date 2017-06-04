@@ -91,7 +91,7 @@ body {
 	font-weight: 400;
 	padding: 10px 20px
 }
-.bd ul{
+.floor .bd ul{
 	float: left;
 	width: 957px;
 	height: 639px;
@@ -99,7 +99,7 @@ body {
 	padding: 0;
 	list-style: none;
 }
-.bd li {
+.floor .bd li {
 	float: left;
 	position: relative;
 	z-index: 9;
@@ -112,16 +112,16 @@ body {
 	border: 1px solid #e5e5e5;
 	background-color: white; 
 }
-.bd li a {
+.floor .bd li a {
 	text-decoration: none;
 	color: black;
 	display: block;
 }
-.bd li>a>span {
+.floor .bd li>a>span {
 	color: #999999;
 	font-size: 12px;
 }
-.bd li img {
+.floor .bd li img {
 	vertical-align: middle;
 	border: 0;
 } 
@@ -394,6 +394,13 @@ header .logo .siteName{
 	border: 0;
 	margin: 0;
 	outline: none;
+}
+
+.to-car {
+	background: none;
+}
+.to-car span {
+	color: red;
 }
 
 

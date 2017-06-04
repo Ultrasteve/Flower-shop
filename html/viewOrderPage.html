@@ -3,10 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" href="../css/index.css" 
-	type="text/css">
+	<link rel="stylesheet" href="../css/viewOrderPage.css" type="text/css">
+	<link rel="stylesheet" href="../css/index.css" type="text/css">
+	<link rel="stylesheet" href="../css/showGoods.css" type="text/css">
+
 </head>
 <body>
+
 	<div id="mainHeader">
 		<div id="addressButton">
 			<span>送至:</span>
@@ -144,105 +147,103 @@
 		<div>巧克力</div>
 		<div>花语大全</div>
 	</div>
-	<div class="carousel-box">
-		<div class="item active" id="carousel0" data-slide='0'>
-			<div class="fill" style="background-image: url('carousal1.jpg');"></div>
-		</div>
-		<div class="item" id="carousel1" data-slide='1'>
-			<div class="fill" style="background-image: url('carousal02.jpg');"></div>
-		</div>
-		<div class="item" id="carousel2" data-slide='2'>
-			<div class="fill" style="background-image: url('carousel03.jpg');"></div>
-		</div>
-		<div class="item" id="carousel3" data-slide='3'>
-			<div class="fill" style="background-image: url('carousel04.jpg');"></div>
-		</div>
-		<div class="carousel-indicator">
-			<input type="radio" onclick="changeCarousel(this)" name="rTeam" data-slide-to='0' checked="true" />
-			
-			<input type="radio" onclick="changeCarousel(this)" name="rTeam" data-slide-to='1'/>
-			
-			<input type="radio" onclick="changeCarousel(this)" name="rTeam" data-slide-to='2'/>
-			
-			<input type="radio" onclick="changeCarousel(this)" name="rTeam" data-slide-to='3'/>
-			
-		</div>
-		<!-- 轮播控制 -->
+
+	<div class="navigator">
+		<a href="/">首页</a>
+		&gt;
+		<span>我的订单</span>
 	</div>
-	<div class="floor">
-		<div class="floor-hd">
-			<a href="#">更多爱情鲜花&gt;&gt;</a>
-			<h3>
-				<a href="#">爱情鲜花</a>
-			</h3>
-			<span>送·让你怦然心动的人</span>
+
+	<div class="recommand-panel">
+		<div class="recommand-heading">
+			<h3>热销鲜花推荐</h3>
 		</div>
-		<div class="bd">
-			<div class="bd-1">
-				<div class="banner-box">
-					<a href="#">
-						<img src="http://img02.hua.com/pc/pimg/banner_love.jpg">
+		<div class="recommand-body">
+			<div class="side-item">
+				<div class="img-box">
+					<a href="">
+						<img src="http://img01.hua.com/uploadpic/newpic/9010966.jpg_220x240.jpg" alt="" width="180" height="196">
 					</a>
 				</div>
-				<a href="#">爱情鲜花专区&gt;&gt;</a>
+				<div class="info-cont">
+					<div class="title">
+						<a href="#">
+                        鲜花/一往情深-精品玫瑰礼盒:19枝红玫瑰，勿忘我适量
+                    	</a>
+					</div>
+					<div class="price">
+						<span>¥&nbsp;235</span>
+					</div>
+				</div>
 			</div>
-			<ul class="floor-products">
-				<li>
-					<a href="#">
-						<span class="img-box">
-							<img src="http://img01.hua.com/uploadpic/newpic/9010766.jpg_220x240.jpg" alt="">
-						</span>
-						<span>鲜花 · 圆满</span>
-						<p>¥&nbsp;196</p>
-					</a>
-				</li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
-		</div>
-	</div>
-	<div class="floor">
-		<div class="floor-hd">
-			<a href="#">更多爱情鲜花&gt;&gt;</a>
-			<h3>
-				<a href="#">爱情鲜花</a>
-			</h3>
-			<span>送·让你怦然心动的人</span>
-		</div>
-		<div class="bd">
-			<div class="bd-1">
-				<div class="banner-box">
-					<a href="#">
-						<img src="http://img02.hua.com/pc/pimg/banner_love.jpg">
+			<div class="side-item">
+				<div class="img-box">
+					<a href="">
+						<img src="http://img01.hua.com/uploadpic/newpic/9010966.jpg_220x240.jpg" alt="" width="180" height="196">
 					</a>
 				</div>
-				<a href="#">爱情鲜花专区&gt;&gt;</a>
+				<div class="info-cont">
+					<div class="title">
+						<a href="#">
+                        鲜花/一往情深-精品玫瑰礼盒:19枝红玫瑰，勿忘我适量
+                    	</a>
+					</div>
+					<div class="price">
+						<span>¥&nbsp;235</span>
+					</div>
+				</div>
 			</div>
-			<ul class="floor-products">
-				<li>
-					<a href="#">
-						<span class="img-box">
-							<img src="http://img01.hua.com/uploadpic/newpic/9010766.jpg_220x240.jpg" alt="">
-						</span>
-						<span>鲜花 · 圆满</span>
-						<p>¥&nbsp;196</p>
-					</a>
-				</li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
 		</div>
 	</div>
+	
+	<div class="order-wrap">
+		<div class="order-heading">
+			<h3>订单列表</h3>
+		</div>
+		<div class="order-body">
+			<div class="hd">
+				<span class="num">订单编号</span>
+				<span class="booker">收货人</span>
+				<span class="price">订单金额</span>
+				<span class="date">配送时间</span>
+				<span class="operate">操作</span>
+			</div>
+			<ul class="order-item">
+                <li class="imgBox">
+                    <img src="http://img01.hua.com/uploadpic/newpic/9012158.jpg_80x87.jpg" height="56" width="50">
+                </li>
+                <li class="number">188586024
+                </li>
+                <li class="signer">
+                	steve
+                </li>
+                <li class="order-price">
+                    <span>¥ 459</span>
+                </li>
+                <li class="date">2017-06-05</li>
+                <li class="operate">
+                    <a href="#">查看</a>
+                </li>
+            </ul>
+            <ul class="order-item">
+                <li class="imgBox">
+                    <img src="http://img01.hua.com/uploadpic/newpic/9012158.jpg_80x87.jpg" height="56" width="50">
+                </li>
+                <li class="number">188586024
+                </li>
+                <li class="signer">
+                	steve
+                </li>
+                <li class="order-price">
+                    <span>¥ 459</span>
+                </li>
+                <li class="date">2017-06-05</li>
+                <li class="operate">
+                    <a href="#">查看</a>
+                </li>
+            </ul>
+		</div>
+	</div>
+
 </body>
-<script type="text/javascript" src="../js/flower.js"></script>
 </html>

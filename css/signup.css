@@ -1,25 +1,25 @@
 *{
 	margin: 0;
 }
-#signupHeader{
+.signupHeader{
 	height: 100px;
 	background-color: white;
 }
-#signupContent{
+.signupContent{
 	height: 600px;
 	background-color: yellow;
 	padding-top: 80px;
 	box-sizing: border-box;
 }
-#signupFooter{
+.signupFooter{
 	height: 150px;
 	background-color: white;
 }
-#signupContent>div{
+.signupContent>div{
 	margin: 0 auto;
 	width: 400px;
 }
-#signupContent>div>h2{
+.signupContent>div>h2{
 	color: red;
 	font-weight: 10px;
 	margin-bottom: 30px;

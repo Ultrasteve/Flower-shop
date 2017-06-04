@@ -3,11 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" href="../css/orderPage.css">
+	<link rel="stylesheet" href="../css/successPage.css">
 	<link rel="stylesheet" href="../css/index.css">
 </head>
 <body>
-
 	<div id="mainHeader">
 			<div id="addressButton">
 				<span>送至:</span>
@@ -146,169 +145,28 @@
 			<div>花语大全</div>
 		</div>
 
-	<div id="orderInfoPanel" class="panel">
-		<div id="orderHeading" class="panel-head">
-			<h3>填写订单信息</h3>
-		</div>
-		<div id="orderInfo">
-			<div id="customerAddress">
-				<a href="#" id="addBooker" onclick="openAlert()">新增收货人+</a>
-				<h5>收货人信息</h5>
-				<div id="customerInfo">
-					<div>
-						收货人
-					</div>
-					<span>steve</span>
-					<span>广东</span>
-					<span>广州市</span>
-					<span>海珠区</span>
-					<span>详细地址</span>
-					<span>1111</span>
-					<span>010</span>
-					<a href="#" onclick="editInfo()">编辑</a>
-				</div>
+		<div class="success-content">
+			<span class="goodbye">交易成功！欢迎下次光临</span>
+			<div>
+				<span>等待</span>
+				<span id="goback">3</span>
+				<span>s 返回首页</span>
 			</div>
-			<div id="bookerInfo">
-				<h5>订购人信息</h5>
-				<div class="editBooker">
-					<input class="result" type="text" placeholder="您的姓名" />
-					<input class="result" type="text" placeholder="手机号码或电话" />
-					<input class="result" type="text" placeholder="电子邮箱" />
-					<button onclick="completeEdit()">确定</button>
-				</div>
-				<div class="complete-editBooker">
-					<span class="editResult"></span>
-					<span class="editResult"></span>
-					<span class="editResult"></span>
-					<a href="#" onclick="reEdit()">编辑</a>
-				</div>
-			</div>
-			<div id="arriveDate">
-				<div>
-					<h5>送达日期</h5>
-					<input type="date" />
-				</div>
-				<div>
-					<h5>配送时段</h5>
-					<button>不限</button>
-					<button>上午</button>
-					<button>下午</button>
-					<button>晚上</button>
-					<button>定时</button>
-				</div>
-			</div>
-			<div id="messageCard">
-				<div>
-					<h5>贺卡留言+署名</h5>
-					<textarea name="" id="" cols="60" rows="8">贺卡留言+署名</textarea>
-					<div>
-						<span>最多200字，您还可以输入</span>
-						<span>200</span>
-						<span>字。（仅支持中文，英文）</span>
-					</div>
-				</div>
-			</div>
-			<div id="payment">
-				<h5>支付方式</h5>
-				<button>网上支付</button>
-				<button>礼品卡支付</button>
-			</div>
-			<div id="appendInfo">
-				<label>
-					<input type="checkbox" name="appendInfoTeam">
-					<span>备注</span>
-				</label>
-				<label>
-					<input type="checkbox" name="appendInfoTeam">
-					<span>我要发票</span>
-				</label>
-				<label>
-					<input type="checkbox" name="appendInfoTeam">
-					<span>我有优惠券</span>
-				</label>
-			</div>
-			</div>
-	</div>
-	<div class="panel">
-		<div class="panel-head">
-			<h3>核对购物清单</h3>
+			
 		</div>
-		<div>
-		</div>
-	</div>
-	<div id="submitOrder">
-		<div>
-			<span>1</span>
-			<span>件商品，总商品金额：</span>
-			<span>¥ 161</span>
-		</div>
-		<div>
-			<span>配送费：</span>
-			<span>¥ 0</span>
-		</div>
-		<div id="totalCheck">
-			<span>实付款：</span>
-			<span>¥ 161</span>
-		</div>
-		<div>
-			<span>配送至： </span>
-			<span>广州市</span>
-		</div>
-		<div>
-			<span>收货人：</span>
-			<span>Nebulus</span>
-		</div>
-		<button>
-			提交订单
-		</button>
-		<div style="clear: both;"></div>
-	</div>
-
-	<div class="alert-box">
-		<div class="alert-shadow">
-		</div>
-			<div class="alert-content">
-				<div class="alert-head">
-					<span class="alert-title">
-						新增收货人地址
-					</span>
-					<a href="#" onclick="closeAlert()">x</a>
-				</div>
-				<div class="alert-body">
-					<div class="alert-body-component fill-info">
-						<div>
-							收货人姓名：
-							<input name="bookerName" type="text">
-						</div>
-						<div>
-							收货人手机：
-							<input name="mobile" type="text">
-							或电话
-							<input name="tele" type="text">
-						</div>
-						<div>
-							省 市 区
-							<input placeholder="输入省" class="bigAddress" name="province" type="text">
-							<input placeholder="输入市" class="bigAddress" name="city" type="text">
-							<input placeholder="输入区" class="bigAddress" name="block" type="text">
-						</div>
-						<div>
-							详细地址：
-							<input name="address" type="text" placeholder="请输入详细地址">
-						</div>
-						<div>
-							<input name="delieverTeam"  type="radio">市区（免费）
-							<input name="delieverTeam"  type="radio">郊区（＋30）
-							<input name="delieverTeam"  type="radio">远郊（＋50）
-						</div>
-						<div>
-							<button onclick="">保存信息</button>
-						</div>
-					</div>
-				</div>
-			</div>
-	</div>
 </body>
-<script type="text/javascript" src="../js/flower.js">
+<script>
+	function changeSeconds() {
+		var onChange = document.getElementById("goback");
+		onChange.innerHTML = onChange.innerHTML-1;
+		if (onChange.innerHTML == 0) {
+			window.location.href="index.html";
+		}
+		else
+			return;
+	}
+	window.onload = function() {
+		setInterval("changeSeconds()", 1000);
+	}
 </script>
 </html>

@@ -1,0 +1,100 @@
+.order-wrap {
+	left: 230px;
+    position: relative;
+    width: 970px;
+    min-height: 675px;
+    padding: 0;
+    border: 1px solid #d9d9d9;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+.order-heading {
+	margin-bottom: 30px;
+    padding: 8px 10px;
+    background-color: #f5f5f5;
+}
+.order-heading h3 {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 30px;
+    display: inline-block;
+    margin-left:  -180px;
+}
+
+
+.order-body {
+	width: 900px;
+	color: #888;
+	font-size: 12px;
+	margin:0 auto;
+	position: relative;
+	right: 90px;
+}
+.order-body .hd {
+	background: #e5e5e5;
+	height: 30px;
+	font-weight: bold;
+	overflow: auto;
+	text-align: center;
+	line-height: 30px;
+}
+.order-body .hd>span {
+	display: inline-block;
+	float: left;
+}
+.order-body .hd .num {
+	width: 233px;
+}
+.order-body .hd .booker {
+	width: 110px;
+}
+.order-body .hd .price {
+	width: 110px;
+}
+.order-body .hd .date {
+	width: 110px
+}
+.order-body .hd .operate {
+	width: 110px;
+	float: right;
+}
+
+.order-item {
+	list-style: none;
+	overflow: auto;
+	border: 1px solid #e5e5e5;
+	border-top: 0;
+	padding-left: 0;
+}
+.order-item>li{
+	display: inline-block;
+	float: left;
+	margin-left: 10px;
+}
+.order-item .img-box {
+	width: 95px;
+}
+.order-item .number {
+	width: 155px;
+	padding-left: 20px;
+    line-height: 50px;
+}
+.order-item .signer {
+    line-height: 50px;
+    width: 95px;
+    padding-left: 20px;
+}
+.order-item .order-price{
+	line-height: 50px;
+    width: 90px;
+    color: red;
+}
+.order-item .date {
+	line-height: 50px;
+    width: 122px;
+}
+.order-item .operate{
+	line-height: 50px;
+    width: 90px;
+    text-align: center;
+}

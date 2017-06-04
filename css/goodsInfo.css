@@ -25,14 +25,16 @@
 }
 
 .goods-info {
-	width: 1200px;
 	height: 680px;
+	max-width: 1100px;
+}
+.common-border {
 	margin-top: 10px;
-	border-radius: 5px; 
-	border: 1px solid #cac7c7;
 	padding: 20px 30px 15px 30px;
 	box-sizing: border-box;
 	overflow: auto;
+	border-radius: 5px; 
+	border: 1px solid #cac7c7;
 }
 .goods-info>div {
 	display: inline-block;
@@ -142,4 +144,48 @@
 	border: 0.5px solid #999999;
 	margin-left: 16px;
 	display: inline-block;
+}
+
+.detail-box {
+	display: inline-block;
+	text-align: center;
+	font-size: 12px;
+    margin-bottom: 25px;
+    padding: 20px;
+    width: 878px;	 
+}
+.detail-box img {
+    max-width: 100%;
+    margin:0 auto;
+}
+
+.comment-box {
+	position: relative;
+	width: 878px;
+	left: 225px;
+}
+.comment-item {
+	border-bottom: 1px dotted #888;
+	height: 100px;
+	margin-top: 30px;
+	padding: 5px 10px;
+	color: #999999; 
+}
+.comment-item>div {
+	display: inline-block;
+	position: relative;
+}
+.comment-item .comment{
+	width: 600px;
+	height: 50px;
+	text-overflow: ellipsis;
+	position: relative;
+	bottom: 20px;
+	padding: 0 20px;
+	text-align: justify;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.comment-item .date {
+	font-size: 14px;
 }
