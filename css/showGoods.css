@@ -255,7 +255,7 @@ header .logo .siteName{
 #searchBar input[type=submit] {
 	width: 55px;
 	height: 30px;
-	float: left;
+	float: right;
 	text-align: center;
 	color: white;
 	background-color: red;

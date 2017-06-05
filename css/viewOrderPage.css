@@ -70,6 +70,9 @@
 	display: inline-block;
 	float: left;
 	margin-left: 10px;
+	line-height: 50px;
+	text-overflow: ellipsis;
+	overflow: hidden;
 }
 .order-item .img-box {
 	width: 95px;

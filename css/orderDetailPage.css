@@ -1,0 +1,56 @@
+.detail-name {
+	width: 233px;
+	text-align: center;
+	float: left;
+}
+.detail-price {
+	width: 133px;
+	text-align: center;
+	float: left;
+}
+.detail-num {
+	width: 163px;
+	text-align: center;
+	float: left;
+}
+.detail-sum {
+	width: 120px;
+	text-align: center;
+	float: left;
+	float: right;
+}
+.goodPrice {
+	text-align: center;
+    width: 275px;
+}	
+.goodNum {
+	text-align: center;
+}
+.goodSum {
+	text-align: center;
+	width: 250px;
+}
+.goods-detail-body {
+	margin-top: 50px;
+}
+.book-info-body .hd>span{
+	float:none;
+}
+.book-info-body .book-info-item {
+	border: 1px solid #e5e5e5;
+	border-top: 0;
+	list-style: none; 
+	padding-left: 0;
+	overflow: auto;
+}
+.book-info-body .book-info-item>li {
+	margin-top: 7px;
+	padding-left:10px;
+	box-sizing: border-box; 
+}
+.book-info-body .book-info-item>li:first-child {
+	color: red;
+	margin-top: 0;
+	font-weight: bold;
+	font-size: 13px;
+}

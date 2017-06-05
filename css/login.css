@@ -13,7 +13,7 @@
 	background-color: #ff0; 
 }
 #loginFooter{
-	height: 80px;
+	height: 140px;
 	background-color: #000;
 	padding-top: 50px; 
 	text-align: center;
@@ -26,6 +26,7 @@
 	height: 280px;
 	width: 270px;
 	padding: 10px 30px 30px;
+	border: 0.1px solid red;
 }
 #login-banner h2{
 	display: block;

@@ -31,7 +31,7 @@ var completeEdit = function() {
 	var editResult = document.getElementsByClassName('editResult');
 	for(let i = 0;i<result.length;i++) {
 		editResult[i].innerHTML = result[i].value;
-	}
+	} 
 
 	onNone[0].style.display = "none";
 	onShow[0].style.display = "inline-block";
@@ -52,4 +52,29 @@ var submitInfo = function() {
 }
 var editInfo = function() {
 	openAlert();
+}
+var saveInfo = function() {
+	var temp = ["signer", "bigadd", "mobile", "tele"];
+	for(let t = 0;t<temp.length;t++) {
+		var onclass = temp[t];
+		if(temp[t] == "bigadd") {
+			onclass = "address";
+			var filler = document.getElementsByClassName(temp[t]);
+			var onfillclass = document.getElementsByClassName(onclass);
+			console.log(filler);
+			console.log(onfillclass);
+			for(let i = 0;i<filler.length;i++) {
+				console.log(filler[i].value);
+				onfillclass[i].innerHTML = filler[i].value;
+			}
+		}
+		else {
+			var onfillclass = document.getElementsByClassName(onclass);
+			var filler = document.getElementsByName(onclass);
+			onfillclass[0].innerHTML = filler[0].value;
+		}
+	}
+	document.getElementById("addBooker").style.display = "none";
+	document.getElementById("customerInfo").style.display = "block";
+	closeAlert();
 }
